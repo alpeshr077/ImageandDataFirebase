@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "905607063979",
+    "project_id": "onesignal-f7241",
+    "storage_bucket": "onesignal-f7241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905607063979:android:879bbd8cb3f8df74bb4aee",
+        "android_client_info": {
+          "package_name": "com.alpesh1.imageanddatafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUy6Llc1i3JS1ktu8oQedD2UFu0cSORP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905607063979:android:dbb5ad51e0e07ba8bb4aee",
+        "android_client_info": {
+          "package_name": "com.alpesh1.onesignalnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUy6Llc1i3JS1ktu8oQedD2UFu0cSORP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

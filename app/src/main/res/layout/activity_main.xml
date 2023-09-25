@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase Realtime Database"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name :"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Name"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Rate :"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtItemRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Rate"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Unit :"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtItemUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Unit"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/unnamed"/>
+
+                <Button
+                    android:id="@+id/btnSelectImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Image"
+                    app:cornerRadius="10dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#F4511E"
+                    android:onClick="insert_Image"/>
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <Button
+                   android:id="@+id/btnInsertData"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Insert Data"
+                   app:cornerRadius="10dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:backgroundTint="#43A047"
+                   android:onClick="insert_data"
+                   android:visibility="visible"/>
+
+               <Button
+                   android:id="@+id/btnShowData"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Show Data"
+                   app:cornerRadius="10dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:backgroundTint="#1E88E5"
+                   android:onClick="Show_list"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <Button
+                   android:id="@+id/btnUpdateData"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Update Data"
+                   app:cornerRadius="10dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:backgroundTint="#FDD835"
+                   android:onClick="update_data"
+                   android:visibility="gone"/>
+
+               <Button
+                   android:id="@+id/btnDeleteData"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Delete Data"
+                   app:cornerRadius="10dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:backgroundTint="#E51E1E"
+                   android:onClick="delete_list"
+                   android:visibility="gone"/>
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
